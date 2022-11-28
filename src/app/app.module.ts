@@ -8,6 +8,7 @@ import { ViewNewsComponent } from './view-news/view-news.component';
 import { NewsAddComponent } from './news-add/news-add.component';
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
+import { SearchNewsComponent } from './search-news/search-news.component';
 
 
 const myRoute:Routes = [
@@ -22,7 +23,7 @@ const myRoute:Routes = [
   },
   {
     path:"search",
-    component:
+    component:SearchNewsComponent
   }
  
 ]
@@ -31,7 +32,8 @@ const myRoute:Routes = [
     AppComponent,
     ViewNewsComponent,
     NewsAddComponent,
-    NavBarComponent
+    NavBarComponent,
+    SearchNewsComponent
   ],
   imports: [
     BrowserModule,
