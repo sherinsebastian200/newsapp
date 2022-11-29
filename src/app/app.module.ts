@@ -9,6 +9,8 @@ import { NewsAddComponent } from './news-add/news-add.component';
 import { FormsModule } from '@angular/forms';
 import { NavBarComponent } from './nav-bar/nav-bar.component';
 import { SearchNewsComponent } from './search-news/search-news.component';
+import { HttpClientModule} from '@angular/common/http';
+
 
 
 const myRoute:Routes = [
@@ -39,7 +41,8 @@ const myRoute:Routes = [
     BrowserModule,
     AppRoutingModule,
     RouterModule.forRoot(myRoute),
-    FormsModule
+    FormsModule,
+    HttpClientModule
     
   ],
   providers: [],
